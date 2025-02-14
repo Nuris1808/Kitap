@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кітапхана</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background: white;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #333;
+            color: white;
+        }
+        .status {
+            font-weight: bold;
+        }
+        .available { color: green; }
+        .unavailable { color: red; }
+        .borrowed { color: orange; }
+    </style>
+</head>
+<body>
+
+    <h1>📚 Кітапхана</h1>
+
+    <table>
+        <tr>
+            <th>Кітап атауы</th>
+            <th>Автор</th>
+            <th>Жанр</th>
+            <th>Күйі</th>
+        </tr>
+        <tr>
+            <td>Абай жолы</td>
+            <td>Мұхтар Әуезов</td>
+            <td>Роман</td>
+            <td class="status available">Бар</td>
+        </tr>
+        <tr>
+            <td>Қан мен тер</td>
+            <td>Әбдіжәміл Нұрпейісов</td>
+            <td>Роман</td>
+            <td class="status borrowed">Біреу алды</td>
+        </tr>
+        <tr>
+            <td>Шыңғысхан</td>
+            <td>Ілияс Есенберлин</td>
+            <td>Тарихи</td>
+            <td class="status unavailable">Жоқ</td>
+        </tr>
+        <tr>
+            <td>Том Сойердің басынан кешкендері</td>
+            <td>Марк Твен</td>
+            <td>Шетел әдебиеті</td>
+            <td class="status available">Бар</td>
+        </tr>
+    </table>
+
+</body>
+</html>
